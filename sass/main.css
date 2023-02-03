@@ -57,6 +57,7 @@ body {
   background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
   background-position: top;
   background-size: cover;
+  display: none;
 }
 
 .product {
@@ -78,7 +79,7 @@ body {
   width: 100%;
   aspect-ratio: 1.4/1;
   background-color: green;
-  background-image: url("../resources/images/dress-1.png");
+  background-image: url("https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +100,7 @@ body {
 }
 .product__image-list-item {
   width: 100%;
-  background-image: url("../resources/images/dress-1.png");
+  background-image: url("https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,7 +139,7 @@ body {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  background-image: url("../resources/images/user--1.jpg");
+  background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
