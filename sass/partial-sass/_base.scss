@@ -1,0 +1,32 @@
+////////////////////////////////////////
+/// INITIAL SETTING
+
+/// VARIABLES
+:root {
+  --color-primary-dark: rgb(27, 27, 27);
+  --color-primary-white: rgb(255, 255, 255);
+
+  --color-dark-transparent: rgba(27, 27, 27, 0.1);
+}
+
+/// RESET
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  color: var(--color-primary-dark);
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}

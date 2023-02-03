@@ -1,0 +1,14 @@
+{
+  "name": "baazrr",
+  "version": "1.0.0",
+  "description": "Garments marchandizing made easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salman Farshi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

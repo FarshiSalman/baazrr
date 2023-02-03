@@ -1,0 +1,88 @@
+///////////////////////////////
+/// PRODUCT DETAIL SECTION
+
+.product {
+  width: 100%;
+  min-height: 20rem; //need to be fit-content
+  padding: 4rem;
+
+  //background-color: red;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 40% 1fr 30rem;
+
+  column-gap: 4rem;
+
+  &__image {
+    &-container {
+      width: 100%;
+      min-height: auto; //fit content
+    }
+
+    &-main {
+      width: 100%;
+      aspect-ratio: 1.4 / 1; // 16:9 >> 1.77:1
+      background-color: green;
+
+      background-image: url('../../resources/images/dress-1.png');
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-list {
+      width: 100%;
+      height: auto; //fit content
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: row;
+
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: 10rem;
+      grid-auto-rows: 10rem;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      &-item {
+        width: 100%;
+        //height: 10rem;
+        //aspect-ratio: 1.2 / 1;
+        background-image: url('../../resources/images/dress-1.png');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  &__description {
+    width: 100%;
+    color: var(--color-primary-dark);
+  }
+
+  &__info {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+    &-block {
+      width: 100%;
+      height: 10rem;
+      //background-color: red;
+      margin: 1rem 0;
+      padding: 1rem 0;
+      border-top: 1px solid var(--color-dark-transparent);
+      &--title {
+      }
+
+      &--detail {
+      }
+    }
+  }
+}
