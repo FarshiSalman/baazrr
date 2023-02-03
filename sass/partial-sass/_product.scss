@@ -4,9 +4,10 @@
 .product {
   width: 100%;
   min-height: 20rem; //need to be fit-content
-  padding: 4rem;
+  padding: 6rem 0;
+  padding-left: 6rem;
 
-  //background-color: red;
+  background-color: lightcyan;
 
   display: grid;
   grid-template-rows: 1fr;
@@ -25,7 +26,7 @@
       aspect-ratio: 1.4 / 1; // 16:9 >> 1.77:1
       background-color: green;
 
-      background-image: url('../../resources/images/dress-1.png');
+      background-image: url('../resources/images/dress-1.png');
       background-position: top;
       background-size: cover;
       background-repeat: no-repeat;
@@ -48,7 +49,7 @@
         width: 100%;
         //height: 10rem;
         //aspect-ratio: 1.2 / 1;
-        background-image: url('../../resources/images/dress-1.png');
+        background-image: url('../resources/images/dress-1.png');
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -84,5 +85,14 @@
       &--detail {
       }
     }
+  }
+
+  &__user {
+    width: 100%;
+    border-top: 1px solid var(--color-dark-transparent);
+    border-left: 1px solid var(--color-dark-transparent);
+    border-bottom: 1px solid var(--color-dark-transparent);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
   }
 }
