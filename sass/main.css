@@ -163,6 +163,7 @@ body {
 .product__description {
   width: 100%;
   padding-top: 6rem;
+  padding-right: 2rem;
   color: var(--color-primary-dark);
   position: relative;
   text-align: start;
@@ -174,10 +175,11 @@ body {
   text-transform: uppercase;
 }
 .product__description h3 {
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 .product__info {
   width: 100%;
+  margin: 3rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: -webkit-min-content;
@@ -186,7 +188,6 @@ body {
 .product__info-block {
   width: 100%;
   height: 10rem;
-  margin: 3rem 0;
   padding: 1rem 0;
   border-top: 1px solid var(--color-dark-transparent);
   border-bottom: 1px solid var(--color-dark-transparent);
@@ -209,9 +210,21 @@ body {
   background-image: linear-gradient(to bottom, var(--color-primary-light-gray), white);
   position: relative;
 }
+.product__user-bg {
+  width: 100%;
+  aspect-ratio: 1.6/1;
+  background-color: red;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), white), url("https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
 .product__user-contact {
   width: 100%;
-  height: 10rem;
 }
 .product__user-image {
   width: 8rem;
@@ -232,8 +245,31 @@ body {
   margin-bottom: 0.2rem;
   text-transform: capitalize;
 }
+.product__user-info {
+  width: 100%;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
+}
+.product__user-info-block {
+  width: 100%;
+  padding: 1rem 0;
+}
+.product__user-info-block--title {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-primary-dark);
+}
+.product__user-info-block--price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary-red-dark);
+}
 .product__user-detail {
-  margin: 3rem 0;
+  margin-bottom: 3rem;
   text-align: justify;
   text-justify: inter-word;
   color: var(--color-primary-dark);
