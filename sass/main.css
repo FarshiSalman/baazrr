@@ -3,6 +3,10 @@
   --color-primary-white: rgb(255, 255, 255);
   --color-dark-transparent: rgba(27, 27, 27, 0.1);
   --color-primary-light-gray: rgb(241, 241, 241);
+  --color-primary-red-light: #ed6056;
+  --color-primary-red-dark: #e53935;
+  --color-primary-blue-light: #50c1ef;
+  --color-primary-blue-dark: #1e88e5;
 }
 
 *,
@@ -95,7 +99,7 @@ body {
 .product__image-main {
   width: 100%;
   aspect-ratio: 1.4/1;
-  background-color: green;
+  background-color: var(--color-primary-dark);
   background-image: url("https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: top;
   background-size: cover;
@@ -129,6 +133,15 @@ body {
   width: 100%;
   padding-top: 6rem;
   color: var(--color-primary-dark);
+  position: relative;
+  text-align: start;
+}
+.product__description-tag {
+  padding: 1rem 2rem;
+  background-color: var(--color-primary-red-light);
+  color: white;
+  display: inline-block;
+  border-radius: 0.5rem;
 }
 .product__description h3 {
   margin: 3rem 0;
@@ -150,8 +163,9 @@ body {
 }
 .product__user {
   width: 100%;
-  padding: 8rem 2rem 2rem 2rem;
-  background-color: var(--color-primary-light-gray);
+  height: 100vh;
+  padding: 10rem 2rem 2rem 2rem;
+  background-image: linear-gradient(to bottom, var(--color-primary-light-gray), white);
   position: relative;
 }
 .product__user-contact {
@@ -162,16 +176,18 @@ body {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-image: url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 2px solid white;
 }
 .product__user-text {
   position: absolute;
-  top: 10rem;
+  top: 12rem;
   left: 12rem;
 }
 .product__user-title {
   margin-bottom: 0.5rem;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */
