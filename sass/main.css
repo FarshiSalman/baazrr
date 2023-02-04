@@ -351,7 +351,8 @@ body {
   color: var(--color-primary-dark);
 }
 .product__seller {
-  background-color: rgba(173, 173, 173, 0.1);
+  background-color: rgba(207, 207, 207, 0.1);
+  background-image: linear-gradient(to bottom, rgba(173, 173, 173, 0.1), transparent);
   margin-top: -4rem;
   padding: 6rem 2rem 2rem 2rem;
 }
