@@ -9,6 +9,7 @@ const productSizesContainer = document.querySelector('.product__sect-size');
 const productColors = document.querySelectorAll('.color-ref');
 const productColorsContainer = document.querySelector('.product__sect-color');
 const productQuantityInput = document.querySelector('.product__sect-quantity');
+const productQuantityForm = document.querySelector('.quantity_form');
 
 const btnBuyNow = document.querySelector('#buy-now');
 const btnAddToCart = document.querySelector('#add-to-cart');
@@ -83,6 +84,7 @@ const selectColor = productColors.forEach((i) =>
 const setQuantity = productQuantityInput.addEventListener(
   'change',
   function (e) {
+    e.preventDefault();
     //console.log(e.target.value);
     const quantity = e.target.value;
     if (quantity > 100) {
