@@ -5,147 +5,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- INCLUDING FONTS -->
+    <!-- FONT >> LATO -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="sass/main.css" />
-    <title>Baazrr || Garments Marchandizing Made Easy</title>
 
-    <!-- NO CACHING ... NEED TO DELETE -->
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <title>BAAZRR | Garments Marchandizing Made Easy</title>
   </head>
-
   <body>
     <div class="container">
-      <!-- TOP NAVIGATION (FIXED) -->
-      <div class="topnav">
-        <!-- <div class="topnav__user"></div> -->
-        <!-- <img src="resources/images/user--1.jpg" alt="user profile image" /> -->
+      <!-- TOP-NAVIGATION -->
+      <div class="topnav">Top navigation</div>
+
+      <!-- Floating button -->
+      <div class="btn-popup">
+        <img
+          src="https://img.icons8.com/ios/50/000000/messages-mac.png"
+          alt="popup icon"
+          class="btn-popup-icon"
+        />
       </div>
 
-      <!-- PRODUCT DETAIL SECTION -->
-      <div class="product">
-        <!-- COLUMN 1 >> DISPLAY IMAGES -->
-        <div class="product__image-container">
-          <div class="product__image-main"></div>
-          <div class="product__image-list">
-            <div class="product__image-list-item"></div>
+      <!-- PRODUCT-INFO -->
+      <section class="product">
+        <!-- Column - 1 >> Images -->
+        <div class="image-viewer">
+          <div class="image-card product__image-main"></div>
+          <div class="image-viewer__list">
             <div
-              class="product__image-list-item"
+              class="image-card product__image-small card-selected"
               style="
-                background-image: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                background-image: url('https://i.ebayimg.com/images/g/p20AAOSwKCljzVf6/s-l1600.jpg');
               "
             ></div>
-            <!-- <div class="product__image-list-item"></div>
-            <div class="product__image-list-item"></div>
-            <div class="product__image-list-item"></div>
-            <div class="product__image-list-item"></div> -->
+            <div
+              class="image-card product__image-small"
+              style="
+                background-image: url('https://i.ebayimg.com/images/g/FOMAAOSwQExjzVf7/s-l1600.jpg');
+              "
+            ></div>
           </div>
         </div>
 
-        <!-- COLUMN 2 >> DESCRIPTION -->
-        <div class="product__description">
-          <div class="product__description-tag para-sm-b">fashion</div>
-          <h3 class="heading-tertiary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </h3>
-          <div class="product__info">
-            <div class="product__info-block">
-              <div class="product__info-block--title">
-                500-1999 pcs 
-              </div>
-              <div class="product__info-block--price">
-                $12
-              </div>
-            </div>
-            <div class="product__info-block">
-                <div class="product__info-block--title">
-                    2000-4999 pcs 
-                  </div>
-                  <div class="product__info-block--price">
-                    $10
-                  </div>
-            </div>
-            <div class="product__info-block">
-                <div class="product__info-block--title">
-                    >=5000 pcs 
-                  </div>
-                  <div class="product__info-block--price">
-                    $8
-                  </div>
+        <!-- Column - 2 >> Detail -->
+        <div class="product__detail">
+          <div class="tag margin-bottom-md">16% off</div>
+          <div class="para-lg-b margin-bottom-sm">
+            Peter Millar Golf Pullover Crown Sport Seeing Double Print 1/4 Zip
+            XL Blue NWT quantity
+          </div>
+          <div class="product__rating margin-bottom-md">
+            <span class="para-md-b margin-right-bg">5 ratings</span>
+            <span class="para-md-b">5K+ products sold</span>
+          </div>
+          <!-- Product sects -->
+          <div class="product__sect">
+            <div class="product__sect-title">Price</div>
+            <div class="product__sect-price">
+              <span class="product__sect-price--1">$10</span>
+              <span class="product__sect-price--2">$12</span>
             </div>
           </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Brand</div>
+            <div class="product__sect-brand">ABC</div>
+          </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Sizes</div>
+            <div class="product__sect-size">
+              <span class="size">s</span>
+              <span class="size size-active">m</span>
+              <span class="size">l</span>
+              <span class="size">xl</span>
+              <span class="size">xxl</span>
+            </div>
+          </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Colors</div>
+            <div class="product__sect-color">
+              <span class="color-ref">
+                <div
+                  class="color-ref-color"
+                  style="background-color: white"
+                ></div>
+              </span>
+              <span class="color-ref">
+                <div
+                  class="color-ref-color"
+                  style="background-color: gray"
+                ></div>
+              </span>
+              <span class="color-ref color-ref-active">
+                <div
+                  class="color-ref-color"
+                  style="background-color: black"
+                ></div>
+              </span>
+              <span class="color-ref">
+                <div
+                  class="color-ref-color"
+                  style="background-color: red"
+                ></div>
+              </span>
+            </div>
+          </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Quantity</div>
+            <div>
+              <input
+                type="number"
+                name="quantity_input"
+                class="product__sect-quantity"
+              />
+            </div>
+          </div>
+
+          <button class="btn-fixed btn-red margin-top-md margin-right-md">
+            Buy now
+          </button>
+          <button class="btn-fixed btn-red margin-top-md">Add to cart</button>
+          <button class="btn-text make-block margin-top-lg">
+            Review this product
+          </button>
         </div>
 
-        <div class="product__user">
-        <!-- <div class="product__user-bg"></div> -->
-          <div class="product__user-contact">
-            <div class="product__user-image"></div>
-            <div class="product__user-text">
-              <div class="product__user-title heading-tertiary">
-                Seller title
-              </div>
-              <div class="product__user-username para-sm-r">
+        <!-- Column - 3 >> Seller -->
+        <div class="product__seller">
+          <div class="product__seller-top">
+            <div class="product__seller-image"></div>
+            <div class="product__seller-name">
+              <div class="product__seller-title para-lg-r">BDSeller</div>
+              <div class="product__seller-location para-md-r">
                 Dhaka, Bangladesh
               </div>
             </div>
           </div>
-          <div class="product__user-info">
-            <div class="product__user-info-block">
-                <div class="product__user-info-block--price">
-                    4.5
-                  </div>
-              <div class="product__user-info-block--title">
-                Ratings
-              </div>
-              
+          <div class="product__seller-blocks">
+            <div class="product__seller-block">
+              <div class="product__seller-block--1">4.5</div>
+              <div class="product__seller-block--2">ratings</div>
             </div>
-            <div class="product__user-info-block">
-                <div class="product__user-info-block--price">
-                    15K
-                  </div>
-                <div class="product__user-info-block--title">
-                    Sales
-                  </div>
-                  
+            <div class="product__seller-block">
+              <div class="product__seller-block--1">15K</div>
+              <div class="product__seller-block--2">sold</div>
             </div>
-            <div class="product__user-info-block">
-                <div class="product__user-info-block--price">
-                    150+
-                  </div>
-                <div class="product__user-info-block--title">
-                    Products
-                  </div>
-                  
+            <div class="product__seller-block">
+              <div class="product__seller-block--1">150+</div>
+              <div class="product__seller-block--2">products</div>
             </div>
           </div>
-          <div class="product__user-detail para-sm-r">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="product__seller-description para-md-r margin-bottom-bg">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui mollit anim id est
+            laborum.
           </div>
-          <div class="btn-fixed btn-red">
-            <span class="btn-fixed__text">Follow</span>
-          </div>
-          <div class="btn-fixed btn-red">
-            <span class="btn-fixed__text">Contact seller<span>
-          </div>
+          <button class="btn-fixed btn-red product__seller-btn--1">
+            Contact seller
+          </button>
+          <!-- <button class="btn-fixed btn-red product__seller-btn--2">
+            Follow
+          </button> -->
         </div>
-      </div>
+      </section>
 
-      <!-- USER REVIEW SECTION -->
-      <div class="review"></div>
+      <!-- PRODUCT-DESCRIPTION -->
+      <section class="description">Description</section>
     </div>
   </body>
 </html>
