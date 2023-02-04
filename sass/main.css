@@ -371,6 +371,10 @@ body {
   margin-left: 1rem;
   color: var(--color-primary-dark);
 }
+.product__seller-location img {
+  height: 1.6rem;
+  opacity: 0.5;
+}
 .product__seller-blocks {
   width: 100%;
   margin: 3rem 0;
