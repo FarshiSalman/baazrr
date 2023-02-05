@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- TAILWIND -->
+    <script
+      type="text/script"
+      src="./TW-ELEMENTS-PATH/dist/js/index.min.js"
+    ></script>
 
     <link rel="stylesheet" href="sass/main.css" />
 
@@ -22,7 +27,10 @@
   <body>
     <div class="container">
       <!-- TOP-NAVIGATION -->
-      <div class="topnav">Top navigation</div>
+      <div class="topnav">
+        Top navigation
+        <div class="page-toggle">Go to Dashboard</div>
+      </div>
 
       <!-- Floating button -->
       <div class="btn-popup">
@@ -118,7 +126,7 @@
           </div>
           <div class="product__sect">
             <div class="product__sect-title">Quantity</div>
-            <form>
+            <form class="quantity_form">
               <input
                 type="number"
                 name="quantity_input"
@@ -208,6 +216,91 @@
           qui dolorem eum fugiat quo voluptas nulla pariatur
         </p>
       </section>
+
+      <!-- DASHBOARD -->
+      <section class="dashboard hide">
+        <aside class="dashboard__sidebar">
+          <div class="dashboard__sidebar-btns">
+            <button
+              class="graph-btn btn-fixed btn-red margin-bottom-md"
+              id="doughnut-btn"
+              data-n="doughnut"
+            >
+              Doughnut
+            </button>
+            <button
+              class="graph-btn btn-fixed btn-red margin-bottom-md"
+              id="line-btn"
+              data-n="line"
+            >
+              Line Bar
+            </button>
+            <button
+              class="graph-btn btn-fixed btn-red"
+              id="radar-btn"
+              data-n="radar"
+            >
+              Radar
+            </button>
+          </div>
+        </aside>
+        <div class="dashboard__container">
+          <div class="graph doughnut">
+            <!-- Doughnut -->
+            <div class="shadow-lg rounded-lg overflow-hidden">
+              <div class="py-3 px-5 bg-gray-50" style="margin-bottom: 2rem">
+                Doughnut chart
+              </div>
+              <canvas class="p-10" id="chartDoughnut"></canvas>
+            </div>
+
+            <!-- Chart doughnut -->
+            <!-- <script>
+              const dataDoughnut = {
+                labels: ["JavaScript", "Python", "Ruby"],
+                datasets: [
+                  {
+                    label: "My First Dataset",
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                      "rgb(133, 105, 241)",
+                      "rgb(164, 101, 241)",
+                      "rgb(101, 143, 241)",
+                    ],
+                    hoverOffset: 4,
+                  },
+                ],
+              };
+            
+              const configDoughnut = {
+                type: "doughnut",
+                data: dataDoughnut,
+                options: {},
+              };
+            
+              var chartBar = new Chart(
+                document.getElementById("chartDoughnut"),
+                configDoughnut
+              );
+            </script> -->
+          </div>
+          <div class="graph line hide">
+            <!-- Line -->
+            <div class="shadow-lg rounded-lg overflow-hidden">
+              <div class="py-3 px-5 bg-gray-50">Line chart</div>
+              <canvas class="p-10" id="chartLine"></canvas>
+            </div>
+          </div>
+          <div class="graph radar hide">
+            <div class="shadow-lg rounded-lg overflow-hidden">
+              <div class="py-3 px-5 bg-gray-50">Radar chart</div>
+              <canvas class="p-10" id="chartRadar"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <!-- Required chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>
