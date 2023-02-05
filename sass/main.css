@@ -128,6 +128,10 @@ body {
   display: none !important;
 }
 
+.over-hide {
+  overflow: hidden !important;
+}
+
 .btn-fixed {
   width: 20rem;
   padding: 1.2rem 0;
@@ -289,6 +293,24 @@ body {
   border-bottom: 1px solid var(--color-primary-light--2);
 }
 
+.page-toggle {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  background-color: var(--color-red-light);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  float: right;
+  margin: 1.8rem 6rem 0 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-toggle:hover {
+  background-color: var(--color-red-dark);
+  transform: scale(1.1);
+}
+
 .product {
   width: 160rem;
   margin: 4rem 0 14rem 0;
@@ -409,4 +431,48 @@ body {
 .description {
   width: 160rem;
   text-align: start;
+}
+
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 40rem 1fr;
+  grid-template-rows: 1fr;
+}
+.dashboard__sidebar {
+  width: 100%;
+  background-color: var(--color-primary-dark);
+  position: relative;
+}
+.dashboard__sidebar-btns {
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+}
+.dashboard__container {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.graph {
+  width: 80%;
+  height: 80%;
+  margin: 4rem 0 0 4rem;
+}
+
+.doughnut {
+  width: 40% !important;
+  height: auto;
+}
+
+.line {
+  width: 70% !important;
+  height: auto;
+}
+
+.radar {
+  width: 40% !important;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
