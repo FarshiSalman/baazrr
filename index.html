@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT >> LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TAILWIND -->
+    <script
+      type="text/script"
+      src="./TW-ELEMENTS-PATH/dist/js/index.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="sass/main.css" />
+
+    <title>BAAZRR | Garments Marchandizing Made Easy</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- TOP-NAVIGATION -->
+      <div class="topnav">
+        Top navigation
+        <div class="page-toggle">Go to Dashboard</div>
+      </div>
+
+      <!-- Floating button -->
+      <div class="btn-popup">
+        <img
+          src="https://img.icons8.com/ios/50/000000/messages-mac.png"
+          alt="popup icon"
+          class="btn-popup-icon"
+        />
+      </div>
+
+      <!-- PRODUCT-INFO -->
+      <section class="product">
+        <!-- Column - 1 >> Images -->
+        <div class="image-viewer">
+          <div class="image-card product__image-main"></div>
+          <div class="image-viewer__list">
+            <div
+              class="image-card product__image-small card-selected"
+              style="
+                background-image: url('https://i.ebayimg.com/images/g/p20AAOSwKCljzVf6/s-l1600.jpg');
+              "
+            ></div>
+            <div
+              class="image-card product__image-small"
+              style="
+                background-image: url('https://i.ebayimg.com/images/g/FOMAAOSwQExjzVf7/s-l1600.jpg');
+              "
+            ></div>
+          </div>
+        </div>
+
+        <!-- Column - 2 >> Detail -->
+        <div class="product__detail">
+          <div class="tag margin-bottom-md">16% off</div>
+          <div class="para-lg-b margin-bottom-sm">
+            Peter Millar Golf Pullover Crown Sport Seeing Double Print 1/4 Zip
+            XL Blue NWT quantity
+          </div>
+          <div class="product__rating margin-bottom-md">
+            <span class="para-md-b margin-right-bg">5 ratings</span>
+            <span class="para-md-b">5K+ products sold</span>
+          </div>
+          <!-- Product sects -->
+          <div class="product__sect">
+            <div class="product__sect-title">Price</div>
+            <div class="product__sect-price">
+              <span class="product__sect-price--1">$10</span>
+              <span class="product__sect-price--2">$12</span>
+            </div>
+          </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Brand</div>
+            <div class="product__sect-brand">ABC</div>
+          </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Sizes</div>
+            <div class="product__sect-size">
+              <span class="size size-active">s</span>
+              <span class="size">m</span>
+              <span class="size">l</span>
+              <span class="size">xl</span>
+              <span class="size">xxl</span>
+            </div>
+          </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Colors</div>
+            <div class="product__sect-color">
+              <span class="color-ref color-ref-active">
+                <div
+                  class="color-ref-color"
+                  style="background-color: white"
+                ></div>
+              </span>
+              <span class="color-ref">
+                <div
+                  class="color-ref-color"
+                  style="background-color: gray"
+                ></div>
+              </span>
+              <span class="color-ref">
+                <div
+                  class="color-ref-color"
+                  style="background-color: black"
+                ></div>
+              </span>
+              <span class="color-ref">
+                <div
+                  class="color-ref-color"
+                  style="background-color: red"
+                ></div>
+              </span>
+            </div>
+          </div>
+          <div class="product__sect">
+            <div class="product__sect-title">Quantity</div>
+            <form class="quantity_form">
+              <input
+                type="number"
+                name="quantity_input"
+                value="100"
+                class="product__sect-quantity"
+              />
+            </form>
+          </div>
+
+          <button
+            class="btn-fixed btn-red margin-top-md margin-right-md"
+            id="buy-now"
+          >
+            Buy now
+          </button>
+          <button class="btn-fixed btn-red margin-top-md" id="add-to-cart">
+            Add to cart
+          </button>
+          <button class="btn-text make-block margin-top-bg" id="review-product">
+            Review this product
+          </button>
+        </div>
+
+        <!-- Column - 3 >> Seller -->
+        <div class="product__seller">
+          <div class="product__seller-top">
+            <div class="product__seller-image"></div>
+            <div class="product__seller-name">
+              <div class="product__seller-title para-lg-r">BDSeller</div>
+              <div class="product__seller-location para-md-r">
+                <img
+                  src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/66/null/external-map-pin-user-interface-smashingstocks-glyph-smashing-stocks.png"
+                  alt="location icon"
+                />
+                Dhaka, Bangladesh
+              </div>
+            </div>
+          </div>
+          <div class="product__seller-blocks">
+            <div class="product__seller-block">
+              <div class="product__seller-block--1">4.5</div>
+              <div class="product__seller-block--2">ratings</div>
+            </div>
+            <div class="product__seller-block">
+              <div class="product__seller-block--1">15K</div>
+              <div class="product__seller-block--2">sold</div>
+            </div>
+            <div class="product__seller-block">
+              <div class="product__seller-block--1">150+</div>
+              <div class="product__seller-block--2">products</div>
+            </div>
+          </div>
+          <p class="product__seller-description para-md-r margin-bottom-bg">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui mollit anim id est
+            laborum.
+          </p>
+          <button
+            class="btn-fixed btn-red product__seller-btn--1"
+            id="contact-seller"
+          >
+            Contact seller
+          </button>
+          <!-- <button class="btn-fixed btn-red product__seller-btn--2">
+            Follow
+          </button> -->
+        </div>
+      </section>
+
+      <!-- PRODUCT-DESCRIPTION -->
+      <section class="description">
+        <div class="para-lg-b margin-bottom-bg">Product Description</div>
+        <p class="product__seller-description para-bg-r margin-bottom-bg">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+          qui dolorem eum fugiat quo voluptas nulla pariatur
+        </p>
+      </section>
+
+      <!-- PRODUCT-DESCRIPTION -->
+      <section class="review">
+        <div class="para-lg-b margin-bottom-bg">Give your feedback</div>
+        <form action="/" class="review_form">
+          <input
+            type="text"
+            placeholder="Write your review"
+            class="review__input para-bg-r"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            class="btn-fixed btn-red margin-top-bg"
+            id="review-submit"
+          />
+        </form>
+      </section>
+
+      <!-- DASHBOARD -->
+      <section class="dashboard hide">
+        <aside class="dashboard__sidebar">
+          <div class="dashboard__sidebar-btns">
+            <button
+              class="graph-btn btn-fixed btn-red margin-bottom-md"
+              id="doughnut-btn"
+              data-n="doughnut"
+            >
+              Doughnut
+            </button>
+            <button
+              class="graph-btn btn-fixed btn-red margin-bottom-md"
+              id="line-btn"
+              data-n="line"
+            >
+              Line Bar
+            </button>
+            <button
+              class="graph-btn btn-fixed btn-red"
+              id="radar-btn"
+              data-n="radar"
+            >
+              Radar
+            </button>
+          </div>
+        </aside>
+        <div class="dashboard__container">
+          <div class="graph doughnut">
+            <!-- Doughnut -->
+            <div class="shadow-lg rounded-lg overflow-hidden">
+              <div class="py-3 px-5 bg-gray-50" style="margin-bottom: 2rem">
+                Doughnut chart
+              </div>
+              <canvas class="p-10" id="chartDoughnut"></canvas>
+            </div>
+          </div>
+          <div class="graph line hide">
+            <!-- Line -->
+            <div class="shadow-lg rounded-lg overflow-hidden">
+              <div class="py-3 px-5 bg-gray-50">Line chart</div>
+              <canvas class="p-10" id="chartLine"></canvas>
+            </div>
+          </div>
+          <div class="graph radar hide">
+            <div class="shadow-lg rounded-lg overflow-hidden">
+              <div class="py-3 px-5 bg-gray-50">Radar chart</div>
+              <canvas class="p-10" id="chartRadar"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Required chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
