@@ -351,6 +351,15 @@ body {
 .product__image-main {
   background-image: url("https://i.ebayimg.com/images/g/p20AAOSwKCljzVf6/s-l1600.jpg");
 }
+.product__rating {
+  display: flex;
+  align-items: center;
+}
+.product .star-icon img {
+  width: 2.4rem;
+  height: auto;
+  display: inline-block;
+}
 .product__detail {
   padding-right: 4rem;
   text-align: start;
